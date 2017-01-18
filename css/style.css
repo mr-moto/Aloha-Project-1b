@@ -36,12 +36,6 @@ body{
 h1 {
     display: none;
 }
-.clearfix:before,
-.clearfix:after {
-   content: '';
-   display: table;
-   clear: both;
-}
 
 
 
@@ -51,13 +45,12 @@ h1 {
 /*----------nav-header----------*/
 .nav {
     display: flex;
-    padding: 2% 2% 3%;
     justify-content: space-between;
+    padding: 8px 2% 12px;
 }
 .logo {
     width: 120px;
     cursor: pointer;
-}
 }
 .cart {
     width: 46.5px;
@@ -68,10 +61,7 @@ h1 {
 
 
 /*----------hero-banner----------*/
-.banner {
-    padding-bottom: 50px;
-}
-.hero-banner{
+.BG-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +93,7 @@ h1 {
 /*----------about----------*/
 .about {
     border-bottom: 1px solid #d7d7d7;
-    margin-bottom: 50px;
+    padding: 50px 2%;
 }
 .about-header {
     font-size: 2.1rem;
@@ -120,12 +110,18 @@ h1 {
     font-family: 'ralewaylight', sans-serif;
     font-size: 1rem;
     line-height: 2;
-    padding: 0 12px 51px 12px;
 }
 
 
 
 /*----------products----------*/
+.products {
+    padding: 50px 0px 10px;
+}
+.prod-list {
+    display: flex;
+    flex-direction: column;
+}
 .products-header {
     font-size: 2.1rem;
     font-family: 'playfair_displayitalic', sans-serif;
@@ -167,16 +163,19 @@ h1 {
 
 /*----------updates----------*/
 .updates-banner{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: linear-gradient( to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.1) 100% ), url(../images/wave-bkgd.jpg) no-repeat center bottom;
     background-size: auto, 1260px auto;
     margin-bottom: 7px;
+    height: 292px;
+    text-align: center;
 }
 .updates-header{
     color: white;
     font-size: 2.1rem;
-    padding-top: 48px;
-    padding-bottom: 16px;
+    padding-bottom: 18px;
     text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
     font-family: 'playfair_displayitalic', sans-serif;
 }
@@ -189,23 +188,24 @@ h1 {
     color: white;
     font-size: 1rem;
     line-height: 2;
-    padding: 0 1.5px 25.5px 1.5px;
+    padding: 0 1.5px 0 1.5px;
 }
 
 .email-form {
     display: block;
-    margin: 0 12% 0 6.7%;
-    width: 73.5%;
+    margin: 30px auto 0;
+    width: 90%;
     position: relative;
-    padding-bottom: 47px;
 }
 input[type="email"]{
-    width: 71%;
     border: 0;
-    border-radius: 45px;
-    font-size: 0.9rem;
+    border-radius: 25px;
+    font-size: 1rem;
     font-family: 'ralewaylight';
-    padding: 3.9% 39.8% 3.9% 7%;
+    padding: 11px 33% 11px 6%;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 button[type="submit"]{
     background-color: #e2574c;
@@ -215,10 +215,10 @@ button[type="submit"]{
     border: 0;
     border-radius: 25px;
     cursor: pointer;
-    padding: 3% 6.3%;
+    padding: 8px 6.5%;
+    right: 1%;
+    top: 9%;
     position: absolute;
-    top: 2.5%;
-    right: -17%;
 }
 input:focus {
     outline:0;
