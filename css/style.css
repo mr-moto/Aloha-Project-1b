@@ -1,0 +1,490 @@
+
+
+
+/*
+---------------specs--------------
+Typography:
+    -The base font size is 16px for all screen width 600px and up (the mobile base font size is 14px)
+    -The body font family is Raleway Light
+    -The headings font family is Playfair Display
+
+Colours:
+    -The HEX code for the body font colour is #2d2d2d
+    -The HEX code for the light grey text colour is #969696
+    -The HEX code for orange brand colour is #e2574c (used for links, some headings, and buttons)
+    -The HEX code for the link hover state colour is #b64036
+    -The HEX code for the light grey border colour is #d7d7d7
+    -The HEX code for the dark grey background colour is the footer is #242424
+
+Screen Sizes:
+    -The width of the desktop-friendly content area is 1240px
+    -If undertaking the responsive stretch goal, the width of the tablet-friendly content area is 600px
+*/
+
+
+html {
+    font-size: 14px; 
+}
+body{
+    color: #2d2d2d;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%
+}
+h1 {
+    display: none;
+}
+.clearfix:before,
+.clearfix:after {
+   content: '';
+   display: table;
+   clear: both;
+}
+
+
+
+ /*Content*/
+
+
+/*----------nav-header----------*/
+.nav {
+    display: flex;
+    padding: 12px 0 10px;
+    width: 100%;
+    max-height: 153px;
+    justify-content: space-between;
+}
+.logo {
+    width: 108px;
+    padding-left: 7px;
+    cursor: pointer;
+}
+.cart {
+    width: 43.5px;
+    padding-right: 7px;
+    cursor: pointer;
+}
+
+
+
+
+/*----------hero-banner----------*/
+.banner {
+    padding-bottom: 50px;
+}
+.hero-banner{
+    text-align: center;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),url(../images/banner-girl.png) no-repeat center 53px, url(../images/flower-bkgd.jpg) repeat-x center bottom;
+    background-size: cover, 133px auto, cover;
+    height: 351px;
+}
+.new-collection {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: 'ralewaymedium',sans-serif;
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    padding-top: 144px;
+    padding-bottom: 16px;
+}
+.ss-season {
+    color: white;
+    font-family: 'playfair_displayregular', sans-serif;
+    font-weight: normal;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    padding-bottom: 145px;
+}
+
+
+
+
+
+/*----------about----------*/
+.about {
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 50px;
+}
+.about-header {
+    font-size: 2.1rem;
+    font-family: 'playfair_displayitalic', sans-serif;
+    font-style: italic;
+    padding-bottom: 18.5px;
+}
+.styles-bold {
+    font-family: 'playfair_displaybold', sans-serif;
+    font-style: normal;
+    
+}
+.about-p {
+    font-family: 'ralewaylight', sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0 12px 51px 12px;
+}
+
+
+
+/*----------products----------*/
+.products-header {
+    font-size: 2.1rem;
+    font-family: 'playfair_displayitalic', sans-serif;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+.products-bold {
+    font-family: 'playfair_displaybold', sans-serif;
+    font-style: normal;
+}
+.prod-img {
+    width: 280px;
+    padding-bottom: 11px;
+    cursor: pointer;
+}
+.prod-type {
+    font-size: 0.66rem;
+    color: #969696;
+    font-family: 'ralewaymedium', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+.prod-name {
+    font-family: 'playfair_displayregular', sans-serif;
+    font-size: 1.35rem;
+    color: #e2574c;
+    padding-bottom: 18px;
+    cursor: pointer;
+}
+.price {
+    font-size: 0.9rem;
+    color: #969696;
+    font-family: 'ralewaymedium', sans-serif;
+    padding-bottom: 44px;
+}
+
+
+
+
+/*----------updates----------*/
+.updates-banner{
+    text-align: center;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.1) 100% ), url(../images/wave-bkgd.jpg) no-repeat center bottom;
+    background-size: auto, 1260px auto;
+    margin-bottom: 7px;
+}
+.updates-header{
+    color: white;
+    font-size: 2.1rem;
+    padding-top: 48px;
+    padding-bottom: 16px;
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    font-family: 'playfair_displayitalic', sans-serif;
+}
+.updates-bold {
+    font-family: 'playfair_displaybold', sans-serif;
+    font-style: normal;
+}
+.updates-text {
+    font-family: 'ralewaylight', sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0 1.5px 25.5px 1.5px;
+}
+
+.email-form {
+    display: block;
+    margin: 0 12% 0 6.7%;
+    width: 73.5%;
+    position: relative;
+    padding-bottom: 47px;
+}
+input[type="email"]{
+    width: 71%;
+    border: 0;
+    border-radius: 45px;
+    font-size: 0.9rem;
+    font-family: 'ralewaylight';
+    padding: 3.9% 39.8% 3.9% 7%;
+}
+button[type="submit"]{
+    background-color: #e2574c;
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'ralewaymedium';
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 3% 6.3%;
+    position: absolute;
+    top: 2.5%;
+    right: -17%;
+}
+input:focus {
+    outline:0;
+    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+}
+button:hover {
+    background-color: #b64036;
+}
+
+/*----------footer----------*/
+.footer {
+    background-color: #242424;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footer-text {
+    line-height: 1.5;
+    font-family: 'playfair_displayregular', sans-serif;
+    font-size: 0.88rem;
+    padding-bottom: 33px;
+}
+.copyright {
+    padding-bottom: 12px;
+}
+.contact {
+    padding-bottom: 14px;
+}
+.email {
+    color: white;
+}
+.email:hover{
+    color: #b64036;
+}
+.address {
+    color: #969696;
+}
+.social-media {
+    font-size: 0.9rem;
+    padding-bottom: 58px;
+}
+i {
+    display: block;
+    color: white;
+    padding: 0 5.5px;
+    cursor: pointer;
+}
+i:hover {
+    color: #b64036;
+}
+.icon-text { /*text vertical instead of horizontal*/
+    visibility: hidden;
+    font-family: 'ralewaylight', sans-serif;
+}
+
+
+
+/*----------Breakpoints----------*/
+@media screen and (min-width: 600px){
+    html {
+        font-size: 16px;
+    }
+    /*----------Breakpoint nav bar----------*/
+    .nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .logo {
+        width: 155px;
+    }
+    .cart {
+        width: 60px;
+    }
+    /*----------Breakpoint banner----------*/
+    .banner {
+        padding-bottom: 65px;
+    }
+    .hero-banner {
+        background: linear-gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),url(../images/banner-girl.png) no-repeat center 59px, url(../images/flower-bkgd.jpg) repeat-x center bottom;
+        background-size: cover, 151px auto, cover;
+        height: 399px;
+        position: relative;
+        }
+    .new-collection {
+        padding-top: 155px;
+        padding-bottom: 25px;
+        font-size: 1.3rem;
+    }
+    .ss-season {
+        font-size: 3rem;
+        padding-bottom: 152px;
+    }
+    /*----------Breakpoint about-----------*/
+    .about {
+        margin-bottom: 65px; 
+    }
+    .about-header {
+        font-size: 2.4rem;
+        padding-bottom: 24px;
+    }
+    .about-p {
+        font-size: 1.2rem;    
+        line-height: 1.9;
+        padding: 0 12px 63px 12px;
+    }
+    /*----------Breakpoint products----------*/
+    .products {
+        padding-bottom: 61px;
+    }
+    .products-header {
+        font-size: 2.4rem;
+        padding-bottom: 46px;
+    }
+    .products ul li {
+        float: left;
+        width: 50%;
+    }
+    .prod-img {
+        width: 70%;
+        padding: 0 15% 4.75%;
+        max-width: 308px;
+    }
+    .prod-type {
+        font-size: 0.77rem;
+        padding-bottom: 18px;
+    }
+    .prod-name {
+        font-size: 1.5rem;
+        padding: 0 29px 23px;
+    }
+    .price {
+        font-size: 1rem;
+        padding-bottom: 58px;
+    }
+    /*----------Breakpoint upadtes----------*/
+    .updates-banner {
+        background-size: auto, 1440px auto;
+    }
+    .updates-header {
+        font-size: 2.4rem;
+        padding-top: 64px;
+        padding-bottom: 23px;
+    }
+    .updates-text {
+        font-size: 1.2rem;
+        line-height: 1.9;
+        padding: 0 1.5px 32.5px 1.5px;
+    }
+    .email-form {
+        padding-bottom: 62px;
+        margin: 0 12% 0 16%;
+    }
+    input[type="email"] {
+        padding: 17px 52px 17px 31px;
+    }
+    button[type="submit"] {
+        right: 7%;
+        padding: 14px 27px;
+    }
+    /*----------Breakpoint footer----------*/
+    .footer {
+        height: 195px;
+        padding-top: 66px;
+    }
+    .footer-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        float: left;
+        text-align: left;
+        padding-left: 13px
+    }
+    .copyright {
+        padding-bottom: 13px;
+    }
+    .contact {
+        padding-bottom: 15px;
+    }
+    .social-media {
+        float: right;
+        text-align: left;
+        font-size: 1.05rem;
+        line-height: 1.9;
+        font-family: 'ralewaylight';
+        margin-right: 32px;
+    }
+    .icon-text {
+        display: inline;
+    }
+    i {
+        padding-right: 1px;
+        width: 33px;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color:#b64036;
+    }
+    .icon-text {
+        visibility: visible;
+    }
+
+@media screen and (min-width: 1240px) {
+    /*----------breakpoint nav----------*/
+    .logo {
+        width: 165px;
+    }
+    .cart {
+        width: 65px;
+    }
+    /*----------breakpoint banner----------*/
+    .hero-banner {
+        background-size: cover, 252px auto, contain;
+        height: 549px;
+    }
+    .new-collection {
+        padding-top: 220px;
+        padding-bottom: 32px;
+    }
+    .ss-season {
+        font-size: 4rem;
+    }
+    /*----------about----------*/
+    .about-header {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .about-p {
+        width: 720px;
+        margin: 0 auto;
+    }
+    /*----------breakpoint products----------*/
+    .products {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding-bottom: 16px;
+    }
+    .products ul li {
+        width: 25%;
+        
+    }
+    .prod-img {
+        width: 80%;
+        padding: 0;
+        max-width: none;
+    }
+    .updates-header {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .updates-text {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .email-form {
+        width: 45%;
+        margin: 0 12% 0 28%;
+    }
+    button[type="submit"] {
+        right: 8%;
+    }
+/*-----------breakpoint footer----------*/
+    .social-media {
+        margin-right: 80px;
+    }
+}
