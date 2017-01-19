@@ -232,14 +232,13 @@ button:hover {
 .footer {
     background-color: #242424;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding: 53px 0;
 }
 .footer-text {
     line-height: 1.5;
     font-family: 'playfair_displayregular', sans-serif;
     font-size: 0.88rem;
-    padding-bottom: 33px;
+    margin-bottom: 30px;
 }
 .copyright {
     padding-bottom: 12px;
@@ -258,19 +257,20 @@ button:hover {
 }
 .social-media {
     font-size: 0.9rem;
-    padding-bottom: 58px;
+}
+.social-media li {
+    display: inline-block;
 }
 i {
-    display: block;
     color: white;
-    padding: 0 5.5px;
+    padding: 0 7px;
     cursor: pointer;
 }
 i:hover {
     color: #b64036;
 }
 .icon-text { /*text vertical instead of horizontal*/
-    visibility: hidden;
+    display: none;
     font-family: 'ralewaylight', sans-serif;
 }
 
