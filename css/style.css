@@ -45,16 +45,41 @@ h1 {
 /*----------nav-header----------*/
 .nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 8px 2% 12px;
+    padding: 12px 2% 12px;
 }
 .logo {
-    width: 120px;
+    width: 132px;
     cursor: pointer;
 }
+.logo-wrap {
+    flex: 0 1 50%;
+    text-align: left;
+}
 .cart {
-    width: 46.5px;
+    width: 53.5px;
     cursor: pointer;
+}
+.cart-wrap {
+    flex: 0 1 50%;
+    text-align: right;
+}
+.navbar {
+    padding-top: 15px;
+    border-top: 1px solid #d7d7d7;
+    margin-top: 4px;
+    width: 100%;
+}
+.navbar li {
+    display: inline-block;
+    margin: 0px 4%;
+    text-transform: uppercase;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #e2574c;
+    font-family: 'ralewaymedium';
 }
 
 
@@ -269,7 +294,7 @@ i {
 i:hover {
     color: #b64036;
 }
-.icon-text { /*text vertical instead of horizontal*/
+.icon-text {
     display: none;
     font-family: 'ralewaylight', sans-serif;
 }
