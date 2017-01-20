@@ -260,12 +260,12 @@ button:hover {
 .footer {
     background-color: #242424;
     color: white;
-    padding: 53px 0;
+    padding: 63px 0;
 }
 .footer-text {
     line-height: 1.5;
     font-family: 'playfair_displayregular', sans-serif;
-    font-size: 0.88rem;
+    font-size: 1rem;
     margin-bottom: 30px;
 }
 .copyright {
@@ -284,7 +284,7 @@ button:hover {
     color: #969696;
 }
 .social-media {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .social-media li {
     display: inline-block;
