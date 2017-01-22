@@ -296,6 +296,7 @@ button[type="submit"] {
     right: 1%;
     top: 9%;
     position: absolute;
+    outline: 0;
 }
 input:focus {
     outline:0;
