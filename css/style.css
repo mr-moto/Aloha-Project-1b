@@ -48,6 +48,10 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 12px 2% 12px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
 }
 .logo {
     width: 132px;
@@ -93,6 +97,7 @@ h1 {
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),url(../images/banner-girl.png) no-repeat center 53px, url(../images/flower-bkgd.jpg) repeat-x center bottom;
     background-size: cover, 153px auto, cover;
     height: 400px;
+    margin-top: 116px;
 }
 .BG-content {
     width: 80%;
