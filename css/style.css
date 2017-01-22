@@ -192,43 +192,41 @@ h1 {
 
 /*----------products----------*/
 .products {
-    padding: 50px 0px 10px;
+    padding: 65px 0px 61px;
 }
-.prod-list {
-    display: flex;
-    flex-direction: column;
+.prod-wrapper {
+    width: 100%;
 }
 .products-header {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     font-family: 'playfair_displayitalic', sans-serif;
     font-style: italic;
-    padding-bottom: 40px;
+    padding-bottom: 78px;
 }
 .products-bold {
     font-family: 'playfair_displaybold', sans-serif;
     font-style: normal;
 }
 .prod-img {
-    width: 280px;
-    padding-bottom: 11px;
+    width: 310px;
     cursor: pointer;
 }
 .prod-type {
-    font-size: 0.66rem;
+    font-size: 0.75rem;
     color: #969696;
     font-family: 'ralewaymedium', sans-serif;
     text-transform: uppercase;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
 }
 .prod-name {
     font-family: 'playfair_displayregular', sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     color: #e2574c;
-    padding-bottom: 18px;
+    padding-bottom: 19px;
     cursor: pointer;
 }
 .price {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #969696;
     font-family: 'ralewaymedium', sans-serif;
     padding-bottom: 44px;
