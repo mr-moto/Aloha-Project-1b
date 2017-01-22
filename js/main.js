@@ -19,12 +19,12 @@ $(function() {
         event.preventDefault();
         var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         var val = $('.email-input').val();
-            if(email.test(val)){
+        if(email.test(val)){
             alert('coolcats)');
-            }
-            else{
+        }
+        else{
             alert('YOU DUN GOOFED');
-            }
+        }
     });
 
 
