@@ -211,7 +211,7 @@ h1 {
 
 /*----------products----------*/
 .products {
-    padding: 65px 0px 61px;
+    padding: 62px 0px 61px;
 }
 .prod-wrapper {
     width: 100%;
@@ -220,11 +220,14 @@ h1 {
     font-size: 2.4rem;
     font-family: 'playfair_displayitalic', sans-serif;
     font-style: italic;
-    padding-bottom: 78px;
+    padding-bottom: 60px;
 }
 .products-bold {
     font-family: 'playfair_displaybold', sans-serif;
     font-style: normal;
+}
+.prod-list{
+    padding-bottom: 20px;
 }
 .prod-img {
     width: 310px;
@@ -248,12 +251,16 @@ h1 {
     font-size: 1rem;
     color: #969696;
     font-family: 'ralewaymedium', sans-serif;
-    padding-bottom: 44px;
+    padding-bottom: 24px;
 }
-
-
-
-
+.add-cart {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    height: 22px;
+    width: 90px;
+}
 /*----------updates----------*/
 .updates-banner {
     display: flex;
