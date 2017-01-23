@@ -26,8 +26,8 @@ $(function () {
         imagesLoaded: true,
         autoPlay: true,
         prevNextButtons: false,
-        wrapAround: true,
         resize: true,
+        wrapAround: true,
     });
 
 
