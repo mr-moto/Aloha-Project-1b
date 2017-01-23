@@ -38,10 +38,10 @@ $(function () {
         // email filter
             val = $('.email-input').val();
         if (email.test(val)) {
-            alert('coolcats)');
+            alert('Cool Cats)');
         }
         else {
-            alert('YOU DUN GOOFED');
+            alert('ERROR: invalid email');
         }
     });
 
