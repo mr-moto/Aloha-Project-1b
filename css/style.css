@@ -606,6 +606,8 @@ i:hover {
         font-size: 1.2rem;
         line-height: 1.9;
         padding: 0 1.5px 32.5px 1.5px;
+        max-width: 720px;
+        margin: 0 auto;
     }
     .email-form {
         padding-bottom: 62px;
@@ -620,25 +622,25 @@ i:hover {
     /*----------Breakpoint footer----------*/
     .footer {
         height: 150px;
-        padding-top: 66px;
+        padding-top: 4.125rem;
         display: flex;
         justify-content: space-between;
     }
     .footer-text {
         text-align: left;
-        padding-left: 13px;
+        padding-left: 1rem;
     }
     .copyright {
-        padding-bottom: 13px;
+        padding-bottom: 1rem;
     }
     .contact {
-        padding-bottom: 15px;
+        padding-bottom: 1rem;
     }
     .social-media {
         text-align: left;
         font-size: 1.05rem;
         line-height: 1.9;
-        margin-right: 32px;
+        margin-right: 2rem;
     }
     .social-media li {
         display: block;
@@ -647,7 +649,7 @@ i:hover {
         display: inline;
     }
     i {
-        width: 20px;
+        width: 1.25rem;
     }
     .social-media a {
         color: white;
