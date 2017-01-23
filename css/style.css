@@ -509,37 +509,31 @@ i:hover {
         align-self: center;
     }
     .navbar li {
-        margin: 0 7px;
+        margin: 0 0.45rem;
     }
     /*----------Breakpoint banner----------*/
     .banner {
-        margin-top: 81px;
+        margin-top: 5rem;
     }
-    .hero-banner {
-        background: linear-gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),url(../images/banner-girl.png) no-repeat center 59px, url(../images/flower-bkgd.jpg) repeat-x center bottom;
-        background-size: cover, 151px auto, cover;
-        height: 399px;
-        position: relative;
-        }
     .new-collection {
-        padding-top: 155px;
+        padding-top: 9.7rem;
     }
     .ss-season {
         font-size: 3rem;
-        padding-bottom: 152px;
+        padding-bottom: 9.5rem;
     }
     /*----------Breakpoint about-----------*/
     .about {
-        margin-bottom: 65px; 
+        margin-bottom: 4rem; 
     }
     .about-header {
         font-size: 2.4rem;
-        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
     }
     .about-p {
         font-size: 1.2rem;    
         line-height: 1.9;
-        padding: 0 12px 63px 12px;
+        padding: 0 0.75em 4rem;
     }
     /*----------categories----------*/
     .wide {
@@ -565,12 +559,12 @@ i:hover {
     }
 
     /*----------Breakpoint products----------*/
-    .products {
-        padding-bottom: 61px;
+    #products {
+        padding-bottom: 3.8rem;
     }
     .products-header {
         font-size: 2.4rem;
-        padding-bottom: 70px;
+        padding-bottom: 4.375rem;
     }
     .prod-wrapper {
         width: 50%;
@@ -580,32 +574,31 @@ i:hover {
     }
     .prod-type {
         font-size: 0.77rem;
-        padding-bottom: 18px;
+        padding-bottom: 1.15rem;
     }
     .prod-name {
         font-size: 1.5rem;
-        padding: 0 10% 23px;
+        padding: 0 10% 1.4rem;
     }
     .price {
         font-size: 1rem;
-        padding-bottom: 25px;
+        padding-bottom: 1.55rem;
     }
     .prod-list {
         padding: 0;
     } 
     /*----------Breakpoint upadtes----------*/
     .updates-banner {
-        background-size: auto, 1440px auto;
         height: 378px;
     }
     .updates-header {
         font-size: 2.4rem;
-        padding-top: 65px;
+        padding-top: 4rem;
     }
     .updates-text {
         font-size: 1.2rem;
         line-height: 1.9;
-        padding: 0 1.5px 32.5px 1.5px;
+        padding: 0 0.1rem 2rem;
         max-width: 720px;
         margin: 0 auto;
     }
@@ -664,65 +657,88 @@ i:hover {
 }
 
 @media screen and (min-width: 1240px) {
-    /*----------breakpoint nav----------*/
+    /*----------breakpoint header----------*/
     .logo {
         width: 165px;
     }
     .cart {
         width: 65px;
     }
+    .navbar {
+        font-size: 1rem;
+    }
+    .navbar li {
+        margin: 0 1.125rem;
+    }
     /*----------breakpoint banner----------*/
-    .hero-banner {
-        background-size: cover, 252px auto, contain;
-        height: 549px;
+    .banner {
+        margin-top: 6rem;
+        height: 530px;
+        background-size: cover, 245px auto, contain;
     }
     .new-collection {
-        padding-top: 220px;
-        padding-bottom: 32px;
+        padding-top: 190px;
     }
     .ss-season {
         font-size: 4rem;
     }
     /*----------about----------*/
-    .about-header {
-        width: 720px;
+    .about {
+        padding: 3.7rem 0;
+    }
+    .about-text {
+        max-width: 720px;
         margin: 0 auto;
     }
-    .about-p {
-        width: 720px;
-        margin: 0 auto;
+    /*----------breakpoint categories----------*/
+    .wide {
+        padding: 11.4% 0;
     }
     /*----------breakpoint products----------*/
-    .products {
+    #products {
         max-width: 1240px;
         margin: 0 auto;
-        padding-bottom: 16px;
+        padding-bottom: 4.5rem;
+        padding-top: 3.75rem;
     }
-    .products ul li {
+    .products-header {
+        font-size: 2.3rem;
+        padding-bottom: 4.375rem;
+    }
+    .prod-list {
+        padding-bottom: 0;
+        height: 430px;
+    }
+    .prod-wrapper {
         width: 25%;
-        
     }
-    .prod-img {
-        width: 80%;
-        padding: 0;
-        max-width: none;
+    .add-cart {
+        height: 1.875rem;
+        font-weight: bold;
     }
+    /*----------breakpoint update----------*/
     .updates-header {
         width: 720px;
         margin: 0 auto;
+    }
+    .updates-banner {
+        height: 333px;
     }
     .updates-text {
         width: 720px;
         margin: 0 auto;
     }
     .email-form {
-        width: 45%;
-        margin: 0 12% 0 28%;
+        width: 50%;
+        margin: 0 auto;
     }
     button[type="submit"] {
-        right: 8%;
+        right: 13%;
     }
 /*-----------breakpoint footer----------*/
+    .footer {
+        height: 143px;
+    }
     .social-media {
         margin-right: 80px;
     }
