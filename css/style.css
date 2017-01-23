@@ -64,6 +64,7 @@ h1 {
 .cart {
     width: 53.5px;
     cursor: pointer;
+    display: inline;
 }
 .cart-wrap {
     flex: 0 1 50%;
@@ -85,7 +86,21 @@ h1 {
     color: #e2574c;
     font-family: 'ralewaymedium';
 }
-
+.cart-counter {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #e2574c;
+    color: white;
+    border-radius: 50%;
+    display: none;
+    text-align: center;
+    right: 7px;
+    top: 12px;
+}
+.cart-counter p {
+    padding-top: 3px;
+}
 
 
 
@@ -126,7 +141,7 @@ h1 {
 
 
 /*----------about----------*/
-.about {
+#about {
     padding: 57px 2%;
 }
 .about-header {
@@ -210,7 +225,7 @@ h1 {
 }
 
 /*----------products----------*/
-.products {
+#products {
     padding: 62px 0px 61px;
 }
 .prod-wrapper {
@@ -260,6 +275,10 @@ h1 {
     border: none;
     height: 22px;
     width: 90px;
+    outline: none;
+}
+.add-cart:hover {
+    background-color: magenta; /*magenta cause yes*/
 }
 /*----------updates----------*/
 .updates-banner {
