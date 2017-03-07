@@ -5,7 +5,7 @@ Programs and tools used:
     Dev tools
 
 ## Personal Learnings:
-    Building upon part 1 of the Aloha Project, I have added all the stretch goals and incorporated the javascript/jquery elements taught. 
+Building upon part 1 of the Aloha Project, I have added all the stretch goals and incorporated the javascript/jquery elements taught. 
 
 
 # CHANGELOG:
