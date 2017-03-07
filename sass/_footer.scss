@@ -1,0 +1,98 @@
+.footer {
+    background-color: #242424;
+    color: white;
+    padding: 4.5rem 0;
+    @include tablet {
+        height: 150px;
+        padding-top: 4.125rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    @include desktop {
+        height: 143px;
+    }
+}
+.footer-text {
+    line-height: 1.5;
+    font-family: 'playfair', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 2.15rem;
+    @include tablet {
+        text-align: left;
+        padding-left: 1rem;
+    }
+}
+.copyright {
+    padding-bottom: 0.85rem;
+    @include tablet {
+        padding-bottom: 1rem;
+    }
+}
+.contact {
+    padding-bottom: 1rem;
+    @include tablet {
+        padding-bottom: 1rem;
+    }
+}
+.email {
+    color: white;
+}
+.email:hover{
+    color: #b64036;
+}
+.address {
+    color: #969696;
+}
+.social-media {
+    font-size: 1rem;
+    @include tablet {
+        text-align: left;
+        font-size: 1.05rem;
+        line-height: 1.9;
+        margin-right: 2rem;
+    }
+    @include desktop {
+        margin-right: 80px;
+    }
+}
+.social-media li {
+    display: inline-block;
+    @include tablet {
+        display: block;
+    }
+}
+i {
+    color: white;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    @include tablet {
+        width: 1.25rem;
+    }
+}
+i:hover {
+    color: #b64036;
+}
+.icon-text {
+    display: none;
+    font-family: 'ralewaylight', sans-serif;
+    @include tablet {
+        display: inline;
+        visibility: visible;
+    }
+}
+.fa {
+    padding: 0 0.7rem;
+}
+.social-media {
+    a {
+        @include tablet {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    a:hover{
+        @include tablet {
+            color:#b64036;
+        }
+    }
+}

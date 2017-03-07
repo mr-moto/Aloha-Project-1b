@@ -1,0 +1,40 @@
+#about {
+    padding: 4.1rem 0.9rem;
+    @include tablet {
+        margin-bottom: 4rem; 
+    }
+    @include desktop {
+        padding: 3.7rem 0;
+    }
+}
+.about-header {
+    font-size: 2.4rem;
+    font-family: 'playfair', sans-serif;
+    font-style: italic;
+    padding-bottom: 1.75rem;
+    @include tablet {
+        font-size: 2.4rem;
+        padding-bottom: 1.5rem;
+    }
+}
+.styles-bold {
+    font-family: 'playfair', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+.about-text {
+    font-family: 'ralewaylight', sans-serif;
+    font-size: 1.15rem;
+    line-height: 2;
+    @include desktop {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+.about-p{
+    @include tablet {
+        font-size: 1.2rem;    
+        line-height: 1.9;
+        padding: 0 0.75em 4rem;
+    }
+}

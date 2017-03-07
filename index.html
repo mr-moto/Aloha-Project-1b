@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Aloha Apparel</title>
-    <link rel="stylesheet" href="css/reset.css" media="screen">
     <link rel="stylesheet" href="css/flickity.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="build/css/style.min.css">
 </head>
 
 <body>
     <header class="site-header">
         <h1>Aloha Apparel Co.</h1>
+        <a class="screen-reader-text" href="#categories">Skip to content</a>
         <div class="logo-wrap">
             <img class="logo" src="images/aloha-logo.svg" alt="aloha logo">
         </div>
@@ -52,7 +52,7 @@
         <p class="about-text">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
             for updates below.</p>
     </section>
-    <section id="categories">
+    <section id="categories" tabindex='-1'>
         <div class="category-img">
             <div class="mens wide">
                 <a href="#" class="category-wide-text">Men's</a>
@@ -198,9 +198,9 @@
         </div>
     </footer>
 
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/flickity.pkgd.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="build/js/jquery-3.1.1.min.js"></script>
+    <script src="js/flickity.pkgd.js"></script>
+    <script src="build/js/main.min.js"></script>
 
 </body>
 
