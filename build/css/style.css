@@ -45,31 +45,31 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'ralewaylight';
+  font-family: 'raleway';
   src: url("../../fonts/raleway-lightitalic-webfont.eot");
   src: url("../../fonts/raleway-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/raleway-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic") format("svg");
-  font-weight: normal;
+  font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'ralewaymedium';
+  font-family: 'raleway';
   src: url("../../fonts/raleway-mediumitalic-webfont.eot");
   src: url("../../fonts/raleway-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-mediumitalic-webfont.woff2") format("woff2"), url("../../fonts/raleway-mediumitalic-webfont.ttf") format("truetype"), url("../../fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic") format("svg");
-  font-weight: normal;
+  font-weight: 500;
   font-style: italic; }
 
 @font-face {
-  font-family: 'ralewaylight';
+  font-family: 'raleway';
   src: url("../../fonts/raleway-light-webfont.eot");
   src: url("../../fonts/raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-light-webfont.woff2") format("woff2"), url("../../fonts/raleway-light-webfont.ttf") format("truetype"), url("../../fonts/raleway-light-webfont.svg#ralewaylight") format("svg");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ralewaymedium';
+  font-family: 'raleway';
   src: url("../../fonts/raleway-medium-webfont.eot");
   src: url("../../fonts/raleway-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-medium-webfont.woff2") format("woff2"), url("../../fonts/raleway-medium-webfont.ttf") format("truetype"), url("../../fonts/raleway-medium-webfont.svg#ralewaymedium") format("svg");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
@@ -234,7 +234,8 @@ h1 {
 .navbar li a {
   text-decoration: none;
   color: #e2574c;
-  font-family: 'ralewaymedium'; }
+  font-family: 'raleway';
+  font-weight: 500; }
 
 .cart-counter {
   position: absolute;
@@ -277,7 +278,8 @@ h1 {
 
 .new-collection {
   color: white;
-  font-family: 'ralewaymedium',sans-serif;
+  font-family: 'raleway',sans-serif;
+  font-weight: 500;
   font-size: 1.3rem;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
@@ -327,7 +329,8 @@ h1 {
   font-weight: bold; }
 
 .about-text {
-  font-family: 'ralewaylight', sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 300;
   font-size: 1.15rem;
   line-height: 2; }
   @media (min-width: 1240px) {
@@ -372,7 +375,7 @@ h1 {
     .square {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
-      padding: 9.7% 0; } }
+      padding: 11.4% 0; } }
 
 .mens {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/mens-category.jpg") no-repeat center center;
@@ -419,7 +422,8 @@ h1 {
 .category-wide-text {
   color: white;
   font-size: 1.6rem;
-  font-family: 'ralewaymedium', sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8); }
@@ -430,7 +434,8 @@ h1 {
 .category-square-text {
   color: white;
   font-size: 1.6rem;
-  font-family: 'ralewaymedium', sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8); }
@@ -499,7 +504,8 @@ h1 {
 .prod-type {
   font-size: 0.75rem;
   color: #969696;
-  font-family: 'ralewaymedium', sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   padding-bottom: 1.1rem; }
   @media (min-width: 600px) {
@@ -521,7 +527,8 @@ h1 {
 .price {
   font-size: 1rem;
   color: #969696;
-  font-family: 'ralewaymedium', sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 500;
   padding-bottom: 1.7rem; }
   @media (min-width: 600px) {
     .price {
@@ -579,7 +586,8 @@ h1 {
   font-weight: bold; }
 
 .updates-text {
-  font-family: 'ralewaylight', sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 300;
   color: white;
   font-size: 1.1rem;
   line-height: 2;
@@ -614,7 +622,8 @@ input[type="email"] {
   border: 0;
   border-radius: 25px;
   font-size: 1rem;
-  font-family: 'ralewaylight';
+  font-family: 'raleway';
+  font-weight: 300;
   padding: 1rem 33% 1rem 6%;
   position: relative;
   width: 100%;
@@ -627,7 +636,8 @@ button[type="submit"] {
   background-color: #e2574c;
   color: white;
   font-size: 1rem;
-  font-family: 'ralewaymedium';
+  font-family: 'raleway';
+  font-weight: 500;
   border: 0;
   border-radius: 25px;
   cursor: pointer;
@@ -724,7 +734,8 @@ i:hover {
 
 .icon-text {
   display: none;
-  font-family: 'ralewaylight', sans-serif; }
+  font-family: 'raleway', sans-serif;
+  font-weight: 300; }
   @media (min-width: 600px) {
     .icon-text {
       display: inline;
