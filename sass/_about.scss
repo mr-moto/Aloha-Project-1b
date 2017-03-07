@@ -1,8 +1,5 @@
 #about {
     padding: 4.1rem 0.9rem;
-    @include tablet {
-        margin-bottom: 4rem; 
-    }
     @include desktop {
         padding: 3.7rem 0;
     }

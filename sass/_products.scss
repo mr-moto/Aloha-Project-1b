@@ -13,6 +13,7 @@
 .prod-wrapper {
     width: 100%;
     @include tablet {
+        padding-bottom: 3rem; 
         width: 50%;
     }
     @include desktop {

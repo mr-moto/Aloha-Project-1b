@@ -74,6 +74,9 @@
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    @include tablet {
+        font-size: 1.8rem;
+    }
 }
 .category-square-text {
     color: white;
@@ -82,4 +85,7 @@
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    @include tablet {
+        font-size: 1.8rem;
+    }
 }

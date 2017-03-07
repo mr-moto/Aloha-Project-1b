@@ -38,7 +38,7 @@ $(function () {
         // email filter
             val = $('.email-input').val();
         if (email.test(val)) {
-            alert('Cool Cats)');
+            alert('Success)');
         }
         else {
             alert('ERROR: invalid email');

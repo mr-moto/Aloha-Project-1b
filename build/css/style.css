@@ -17,12 +17,14 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+  box-sizing: border-box; }
 
 body {
   line-height: 1; }
@@ -147,19 +149,17 @@ h1 {
       flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 0.85rem 0;
+  padding: .85rem 2%;
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: white;
-  width: 100%;
-  border-bottom: 1px solid lightgrey;
-  box-shadow: 0 -25px 20px 20px lightgrey; }
+  background-color: #fff;
+  border-bottom: 1px solid #d3d3d3;
+  width: 100%; }
 
 .logo {
-  width: 132px;
-  cursor: pointer;
-  padding-left: 1rem; }
+  width: 120px;
+  cursor: pointer; }
   @media (min-width: 600px) {
     .logo {
       width: 127px; } }
@@ -179,10 +179,8 @@ h1 {
           order: 1; } }
 
 .cart {
-  width: 53.5px;
-  cursor: pointer;
-  display: inline;
-  padding-right: 1rem; }
+  width: 50px;
+  cursor: pointer; }
   @media (min-width: 600px) {
     .cart {
       width: 50px; } }
@@ -204,9 +202,8 @@ h1 {
 .navbar {
   padding-top: 1rem;
   border-top: 1px solid #d7d7d7;
-  margin: 0.3rem 1rem 0;
-  -ms-flex: 1 0 auto;
-      flex: 1 0 auto; }
+  margin-top: 0.5rem;
+  width: 100%; }
   @media (min-width: 600px) {
     .navbar {
       -ms-flex-order: 2;
@@ -216,14 +213,16 @@ h1 {
       margin: 0;
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
-          align-self: center; } }
+          align-self: center;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%; } }
   @media (min-width: 1240px) {
     .navbar {
       font-size: 1rem; } }
 
 .navbar li {
   display: inline-block;
-  margin: 0 1.6rem;
+  margin: 0 1rem;
   text-transform: uppercase; }
   @media (min-width: 600px) {
     .navbar li {
@@ -262,7 +261,7 @@ h1 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../../images/banner-girl.png) no-repeat center 53px, url(../../images/flower-bkgd.jpg) repeat-x center bottom;
   background-size: cover, 153px auto, cover;
   height: 400px;
-  margin-top: 116px; }
+  margin-top: 105px; }
   @media (min-width: 600px) {
     .banner {
       margin-top: 5rem; } }
@@ -308,9 +307,6 @@ h1 {
 
 #about {
   padding: 4.1rem 0.9rem; }
-  @media (min-width: 600px) {
-    #about {
-      margin-bottom: 4rem; } }
   @media (min-width: 1240px) {
     #about {
       padding: 3.7rem 0; } }
@@ -427,6 +423,9 @@ h1 {
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8); }
+  @media (min-width: 600px) {
+    .category-wide-text {
+      font-size: 1.8rem; } }
 
 .category-square-text {
   color: white;
@@ -435,6 +434,9 @@ h1 {
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8); }
+  @media (min-width: 600px) {
+    .category-square-text {
+      font-size: 1.8rem; } }
 
 #products {
   padding: 4.45rem 0 4.35rem; }
@@ -452,6 +454,7 @@ h1 {
   width: 100%; }
   @media (min-width: 600px) {
     .prod-wrapper {
+      padding-bottom: 3rem;
       width: 50%; } }
   @media (min-width: 1240px) {
     .prod-wrapper {
@@ -650,15 +653,14 @@ button:hover {
   padding: 4.5rem 0; }
   @media (min-width: 600px) {
     .footer {
-      height: 150px;
-      padding-top: 4.125rem;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
-  @media (min-width: 1240px) {
-    .footer {
-      height: 143px; } }
+      padding: 4rem 0; } }
+
+@media (min-width: 600px) {
+  .footer-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
 
 .footer-text {
   line-height: 1.5;
@@ -730,6 +732,9 @@ i:hover {
 
 .fa {
   padding: 0 0.7rem; }
+  @media (min-width: 600px) {
+    .fa {
+      padding: 0 1.5rem; } }
 
 @media (min-width: 600px) {
   .social-media a {

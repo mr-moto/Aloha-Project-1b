@@ -3,13 +3,13 @@
     color: white;
     padding: 4.5rem 0;
     @include tablet {
-        height: 150px;
-        padding-top: 4.125rem;
+        padding: 4rem 0;
+    }
+}
+.footer-container{
+    @include tablet {
         display: flex;
         justify-content: space-between;
-    }
-    @include desktop {
-        height: 143px;
     }
 }
 .footer-text {
@@ -82,6 +82,9 @@ i:hover {
 }
 .fa {
     padding: 0 0.7rem;
+    @include tablet {
+        padding: 0 1.5rem;
+    }
 }
 .social-media {
     a {
