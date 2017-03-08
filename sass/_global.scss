@@ -1,15 +1,17 @@
 html {
-    font-size: 14px; 
-    @include tablet{
+    font-size: 14px;
+    @include tablet {
         font-size: 16px;
     }
 }
-body{
+
+body {
     color: #2d2d2d;
     display: block;
     font-size: 1rem;
     text-align: center;
 }
+
 h1 {
     display: none;
 }

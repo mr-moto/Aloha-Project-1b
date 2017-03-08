@@ -1,24 +1,17 @@
-$(function () {
+$(function() {
 
-    // smooth scrolling
-    $('a[href^="#"]').on('click', function (event) {
+    $('a[href^="#"]').on('click', function(event) {
         event.preventDefault();
 
-        var target = this.hash, 
-        // takes # of 'a href'
-            $target = $(target); 
-            // targets # of 'a href'
+        var target = this.hash,
+            $target = $(target);
 
-        $('html, body').animate({ 
-            // animate method on the body
-            'scrollTop': $target.offset().top - 116 
-            // scrolltop animate method smooth scroll to corresponding 'a href' #
-        }, 900) 
-        // .top 116 for fixed nav bar. 900 for scroll speed in millisec
+        $('html, body').animate({
+            'scrollTop': $target.offset().top - 116
+        }, 900)
     });
 
-
-    // flickity slider plugin
+    // flickity slider
     $('.prod-list').flickity({
         cellAlign: 'left',
         contain: true,
@@ -30,34 +23,26 @@ $(function () {
         wrapAround: true,
     });
 
-
     // validate email function
-    $('form').on('click', 'button', function (event) {
+    $('form').on('click', 'button', function(event) {
         event.preventDefault();
-        var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 
-        // email filter
+        var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
             val = $('.email-input').val();
         if (email.test(val)) {
             alert('Success)');
-        }
-        else {
+        } else {
             alert('ERROR: invalid email');
         }
     });
 
-
     // add to cart function
-    var cartNumber = 0; 
-    // global variable
-    $('.prod-list').on('click', 'button', function (event) {
+    var cartNumber = 0;
+    $('.prod-list').on('click', 'button', function(event) {
         var $cartAdd = $('#add-cart-text');
         event.preventDefault();
-        cartNumber++; 
-        // ++ is cartnumber = cartnumber + 1
+        cartNumber++;
         $cartAdd.text(cartNumber);
-        $('.cart-counter').show(); 
-        // .show makes it appear
-
+        $('.cart-counter').show();
     });
 
-})  
+})

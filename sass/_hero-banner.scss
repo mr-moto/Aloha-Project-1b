@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),url(../../images/banner-girl.png) no-repeat center 53px, url(../../images/flower-bkgd.jpg) repeat-x center bottom;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../../images/banner-girl.png) no-repeat center 53px, url(../../images/flower-bkgd.jpg) repeat-x center bottom;
     background-size: cover, 153px auto, cover;
     height: 400px;
     margin-top: 105px;
@@ -15,13 +15,15 @@
         background-size: cover, 245px auto, contain;
     }
 }
+
 .BG-content {
     width: 80%;
     margin: 0 auto;
 }
+
 .new-collection {
     color: white;
-    font-family: 'raleway',sans-serif;
+    font-family: 'raleway', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -35,6 +37,7 @@
         padding-top: 190px;
     }
 }
+
 .ss-season {
     color: white;
     font-family: 'playfair', sans-serif;

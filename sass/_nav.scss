@@ -1,30 +1,32 @@
 .screen-reader-text {
-   clip: rect(1px, 1px, 1px, 1px);
-   position: absolute !important;
-   height: 1px;
-   width: 1px;
-   overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
+
 .screen-reader-text:focus {
-   /* functinonal styles */
-   clip: auto !important;
-   display: block;
-   height: auto;
-   left: 5px;
-   top: 5px;
-   width: auto;
-   z-index: 100000;
-   /* decorative styles */
-   background-color: #f1f1f1;
-   color: #e2574c;
-   border-radius: 3px;
-   box-shadow: 1px 1px 6px rgba(100, 100, 100, 0.8);
-   font-weight: bold;
-   line-height: normal;
-   outline: none;
-   padding: 1rem;
-   text-decoration: none;
+    /* functinonal styles */
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* decorative styles */
+    background-color: #f1f1f1;
+    color: #e2574c;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px rgba(100, 100, 100, 0.8);
+    font-weight: bold;
+    line-height: normal;
+    outline: none;
+    padding: 1rem;
+    text-decoration: none;
 }
+
 .site-header {
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +39,7 @@
     border-bottom: 1px solid #d3d3d3;
     width: 100%;
 }
+
 .logo {
     width: 120px;
     cursor: pointer;
@@ -47,6 +50,7 @@
         width: 165px;
     }
 }
+
 .logo-wrap {
     flex-basis: 50%;
     text-align: left;
@@ -55,6 +59,7 @@
         order: 1;
     }
 }
+
 .cart {
     width: 50px;
     cursor: pointer;
@@ -65,6 +70,7 @@
         width: 65px;
     }
 }
+
 .cart-wrap {
     flex-basis: 50%;
     text-align: right;
@@ -73,12 +79,12 @@
         order: 3;
     }
 }
+
 .navbar {
     padding-top: 1rem;
     border-top: 1px solid #d7d7d7;
     margin-top: 0.5rem;
     width: 100%;
-
     @include tablet {
         order: 2;
         font-size: 0.9rem;
@@ -91,6 +97,7 @@
         font-size: 1rem;
     }
 }
+
 .navbar li {
     display: inline-block;
     margin: 0 1rem;
@@ -102,12 +109,14 @@
         margin: 0 1.125rem;
     }
 }
+
 .navbar li a {
     text-decoration: none;
     color: #e2574c;
     font-family: 'raleway';
     font-weight: 500;
 }
+
 .cart-counter {
     position: absolute;
     height: 20px;
@@ -120,6 +129,7 @@
     right: 0.5rem;
     top: 0.85rem;
 }
+
 #add-cart-text {
     padding-top: 0.15rem;
 }
