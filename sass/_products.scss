@@ -1,5 +1,5 @@
 #products {
-    padding: 4.45rem 0 4.35rem;
+    padding: 4rem 0;
     @include tablet {
         padding-bottom: 3.8rem;
     }
@@ -9,110 +9,100 @@
         padding-bottom: 4.5rem;
         padding-top: 3.75rem;
     }
-}
-
-.prod-wrapper {
-    width: 100%;
-    @include tablet {
-        padding-bottom: 3rem;
-        width: 50%;
-    }
-    @include desktop {
-        width: 25%;
-    }
-}
-
-.products-header {
-    font-size: 2.4rem;
-    font-family: 'playfair', sans-serif;
-    font-style: italic;
-    padding-bottom: 4.3rem;
-    @include tablet {
+    .products-header {
         font-size: 2.4rem;
-        padding-bottom: 4.375rem;
+        font-family: 'playfair', sans-serif;
+        font-style: italic;
+        padding-bottom: 4.3rem;
+        @include tablet {
+            font-size: 2.4rem;
+            padding-bottom: 4.375rem;
+        }
+        @include desktop {
+            font-size: 2.3rem;
+            padding-bottom: 4.375rem;
+        }
     }
-    @include desktop {
-        font-size: 2.3rem;
-        padding-bottom: 4.375rem;
-    }
-}
-
-.products-bold {
-    font-family: 'playfair', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-}
-
-.prod-list {
-    padding-bottom: 1.45rem;
-    @include tablet {
-        padding: 0;
-    }
-    @include desktop {
-        padding-bottom: 0;
-        height: 430px;
-    }
-}
-
-.prod-img {
-    width: 310px;
-    cursor: pointer;
-    @include tablet {
-        width: 80%;
-    }
-}
-
-.prod-type {
-    font-size: 0.75rem;
-    color: #969696;
-    font-family: 'raleway', sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-bottom: 1.1rem;
-    @include tablet {
-        font-size: 0.77rem;
-        padding-bottom: 1.15rem;
-    }
-}
-
-.prod-name {
-    font-family: 'playfair', sans-serif;
-    font-size: 1.5rem;
-    color: #e2574c;
-    padding-bottom: 1.35rem;
-    cursor: pointer;
-    @include tablet {
-        font-size: 1.5rem;
-        padding: 0 10% 1.4rem;
-    }
-}
-
-.price {
-    font-size: 1rem;
-    color: #969696;
-    font-family: 'raleway', sans-serif;
-    font-weight: 500;
-    padding-bottom: 1.7rem;
-    @include tablet {
-        font-size: 1rem;
-        padding-bottom: 1.55rem;
-    }
-}
-
-.add-cart {
-    background-color: black;
-    color: white;
-    border-radius: 25px;
-    border: none;
-    height: 22px;
-    width: 90px;
-    outline: none;
-    @include desktop {
-        height: 1.875rem;
+    .products-bold {
+        font-family: 'playfair', sans-serif;
+        font-style: normal;
         font-weight: bold;
     }
-}
-
-.add-cart:hover {
-    background-color: magenta;
+    .prod-list {
+        padding-bottom: 1.45rem;
+        @include tablet {
+            padding: 0;
+        }
+        @include desktop {
+            padding-bottom: 0;
+            height: 430px;
+        }
+    }
+    .prod-wrapper {
+        width: 100%;
+        @include tablet {
+            padding-bottom: 3rem;
+            width: 50%;
+        }
+        @include desktop {
+            width: 25%;
+        }
+    }
+    .prod-img {
+        width: 310px;
+        cursor: pointer;
+        @include tablet {
+            width: 65%;
+        }
+    }
+    .prod-type {
+        font-size: 0.75rem;
+        color: #969696;
+        font-family: 'raleway', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 1.1rem;
+        @include tablet {
+            font-size: 0.77rem;
+            padding-bottom: 1.15rem;
+        }
+    }
+    .prod-name {
+        font-family: 'playfair', sans-serif;
+        font-size: 1.5rem;
+        color: #e2574c;
+        padding-bottom: 1.35rem;
+        cursor: pointer;
+        @include tablet {
+            font-size: 1.5rem;
+            padding: 0 10% 1.4rem;
+        }
+    }
+    .price {
+        font-size: 1rem;
+        color: #969696;
+        font-family: 'raleway', sans-serif;
+        font-weight: 500;
+        padding-bottom: 1.7rem;
+        @include tablet {
+            font-size: 1rem;
+            padding-bottom: 1.55rem;
+        }
+    }
+    .add-cart {
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        height: 30px;
+        width: 100px;
+        outline: none;
+        @include desktop {
+            height: 1.875rem;
+            font-weight: bold;
+        }
+    }
+    .add-cart:hover {
+        background-color: #0f87a2;
+    }
 }

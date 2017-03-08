@@ -1,8 +1,8 @@
-.banner {
+#banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../../images/banner-girl.png) no-repeat center 53px, url(../../images/flower-bkgd.jpg) repeat-x center bottom;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../../images/banner-girl.png) no-repeat center 60px, url(../../images/flower-bkgd.jpg) repeat-x center bottom;
     background-size: cover, 153px auto, cover;
     height: 400px;
     margin-top: 105px;
@@ -11,44 +11,41 @@
     }
     @include desktop {
         margin-top: 6rem;
-        height: 530px;
+        height: 550px;
         background-size: cover, 245px auto, contain;
     }
-}
-
-.BG-content {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.new-collection {
-    color: white;
-    font-family: 'raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
-    flex: 0 1 10%;
-    margin-bottom: 1.6rem;
-    @include tablet {
-        padding-top: 9.7rem;
+    .BG-content {
+        width: 80%;
+        margin: 0 auto;
     }
-    @include desktop {
-        padding-top: 190px;
+    .new-collection {
+        color: white;
+        font-family: 'raleway', sans-serif;
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+        flex: 0 1 10%;
+        margin-bottom: 1.6rem;
+        @include tablet {
+            padding-top: 9.7rem;
+        }
+        @include desktop {
+            padding-top: 190px;
+        }
     }
-}
-
-.ss-season {
-    color: white;
-    font-family: 'playfair', sans-serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
-    @include tablet {
-        font-size: 3rem;
-        padding-bottom: 9.5rem;
-    }
-    @include desktop {
-        font-size: 4rem;
+    .ss-season {
+        color: white;
+        font-family: 'playfair', sans-serif;
+        font-size: 2.5rem;
+        font-weight: normal;
+        text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+        @include tablet {
+            font-size: 3rem;
+            padding-bottom: 9.5rem;
+        }
+        @include desktop {
+            font-size: 4rem;
+        }
     }
 }

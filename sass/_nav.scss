@@ -4,132 +4,132 @@
     height: 1px;
     width: 1px;
     overflow: hidden;
+    .screen-reader-text:focus {
+        /* functinonal styles */
+        clip: auto !important;
+        display: block;
+        height: auto;
+        left: 5px;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+        /* decorative styles */
+        background-color: #f1f1f1;
+        color: #e2574c;
+        border-radius: 3px;
+        box-shadow: 1px 1px 6px rgba(100, 100, 100, 0.8);
+        font-weight: bold;
+        line-height: normal;
+        outline: none;
+        padding: 1rem;
+        text-decoration: none;
+    }
 }
 
-.screen-reader-text:focus {
-    /* functinonal styles */
-    clip: auto !important;
-    display: block;
-    height: auto;
-    left: 5px;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* decorative styles */
-    background-color: #f1f1f1;
-    color: #e2574c;
-    border-radius: 3px;
-    box-shadow: 1px 1px 6px rgba(100, 100, 100, 0.8);
-    font-weight: bold;
-    line-height: normal;
-    outline: none;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-.site-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: .85rem 2%;
+#site-header {
+    background-color: #fff;
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 1;
-    background-color: #fff;
     border-bottom: 1px solid #d3d3d3;
-    width: 100%;
-}
-
-.logo {
-    width: 120px;
-    cursor: pointer;
-    @include tablet {
-        width: 127px;
+    .header-wrapper {
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: .85rem 2%;
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
     }
-    @include desktop {
-        width: 165px;
+    .logo-wrap {
+        flex-basis: 50%;
+        text-align: left;
+        @include tablet {
+            flex-basis: 20%;
+            order: 1;
+        }
     }
-}
-
-.logo-wrap {
-    flex-basis: 50%;
-    text-align: left;
-    @include tablet {
-        flex-basis: 20%;
-        order: 1;
+    .logo {
+        width: 120px;
+        cursor: pointer;
+        @include tablet {
+            width: 127px;
+        }
+        @include desktop {
+            width: 165px;
+        }
     }
-}
-
-.cart {
-    width: 50px;
-    cursor: pointer;
-    @include tablet {
+    .cart-wrap {
+        flex-basis: 50%;
+        text-align: right;
+        @include tablet {
+            flex-basis: 20%;
+            order: 3;
+        }
+    }
+    .cart {
         width: 50px;
+        cursor: pointer;
+        @include tablet {
+            width: 50px;
+        }
+        @include desktop {
+            width: 65px;
+        }
     }
-    @include desktop {
-        width: 65px;
+    .cart-counter {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: #e2574c;
+        color: white;
+        border-radius: 50%;
+        display: none;
+        text-align: center;
+        right: 0.5rem;
+        top: 0.85rem;
     }
-}
-
-.cart-wrap {
-    flex-basis: 50%;
-    text-align: right;
-    @include tablet {
-        flex-basis: 20%;
-        order: 3;
+    .add-cart-text {
+        padding-top: 0.15rem;
     }
-}
-
-.navbar {
-    padding-top: 1rem;
-    border-top: 1px solid #d7d7d7;
-    margin-top: 0.5rem;
-    width: 100%;
-    @include tablet {
-        order: 2;
-        font-size: 0.9rem;
-        border: none;
-        margin: 0;
-        align-self: center;
-        flex: 1 0 60%;
+    .navbar {
+        padding-top: 1rem;
+        border-top: 1px solid #d7d7d7;
+        margin-top: 0.5rem;
+        width: 100%;
+        @include tablet {
+            order: 2;
+            font-size: 0.9rem;
+            border: none;
+            margin: 0;
+            align-self: center;
+            flex: 1 0 60%;
+        }
+        @include desktop {
+            font-size: 1rem;
+        }
     }
-    @include desktop {
-        font-size: 1rem;
+    .navbar li {
+        display: inline-block;
+        margin: 0 1rem;
+        text-transform: uppercase;
+        @include tablet {
+            margin: 0 0.45rem;
+        }
+        @include desktop {
+            margin: 0 1.125rem;
+        }
     }
-}
-
-.navbar li {
-    display: inline-block;
-    margin: 0 1rem;
-    text-transform: uppercase;
-    @include tablet {
-        margin: 0 0.45rem;
+    .navbar li a {
+        text-decoration: none;
+        color: #e2574c;
+        font-family: 'raleway';
+        font-weight: 500;
+        &:hover {
+            color: #b64036;
+        }
     }
-    @include desktop {
-        margin: 0 1.125rem;
-    }
-}
-
-.navbar li a {
-    text-decoration: none;
-    color: #e2574c;
-    font-family: 'raleway';
-    font-weight: 500;
-}
-
-.cart-counter {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    background-color: #e2574c;
-    color: white;
-    border-radius: 50%;
-    display: none;
-    text-align: center;
-    right: 0.5rem;
-    top: 0.85rem;
-}
-
-#add-cart-text {
-    padding-top: 0.15rem;
 }

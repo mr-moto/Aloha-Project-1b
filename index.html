@@ -12,46 +12,48 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <h1>Aloha Apparel Co.</h1>
-        <a class="screen-reader-text" href="#categories">Skip to content</a>
-        <div class="logo-wrap">
-            <img class="logo" src="images/aloha-logo.svg" alt="aloha logo">
-        </div>
-        <div class="cart-wrap">
-            <img class="cart" src="images/cart-icon.svg" alt="cart icon">
-            <div class="cart-counter">
-                <p id="add-cart-text">0</p>
+    <header id="site-header">
+        <div class="header-wrapper">
+            <h1>Aloha Apparel Co.</h1>
+            <a class="screen-reader-text" href="#categories">Skip to content</a>
+            <div class="logo-wrap">
+                <img class="logo" src="images/aloha-logo.svg" alt="aloha logo">
+            </div>
+            <div class="cart-wrap">
+                <img class="cart" src="images/cart-icon.svg" alt="cart icon">
+                <div class="cart-counter">
+                    <p class="add-cart-text">0</p>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#categories">shop</a>
+                    </li>
+                    <li>
+                        <a href="#products">featured</a>
+                    </li>
+                    <li>
+                        <a href="#updates">updates</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="navbar">
-            <ul>
-                <li>
-                    <a href="#about">about</a>
-                </li>
-                <li>
-                    <a href="#categories">shop</a>
-                </li>
-                <li>
-                    <a href="#products">featured</a>
-                </li>
-                <li>
-                    <a href="#updates">updates</a>
-                </li>
-            </ul>
-        </div>
     </header>
-    <section class="banner">
+    <section id="banner">
         <div class="BG-content">
             <p class="new-collection">New Collection</p>
             <p class="ss-season">Spring/Summer 2016</p>
         </div>
     </section>
     <section id="about">
-        <h2 class="about-header">Hand-Crafted <span class="styles-bold">Styles</span></h2>
-        <p class="about-text">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+        <h2>Hand-Crafted <span>Styles</span></h2>
+        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     </section>
-    <section id="categories" tabindex='-1'>
+    <section id="categories">
         <div class="category-img">
             <div class="mens wide">
                 <a href="#" class="category-wide-text">Men's</a>
@@ -144,7 +146,7 @@
             </form>
         </div>
     </section>
-    <footer class="footer">
+    <footer id="footer">
         <div class="footer-container">
             <div class="footer-text">
                 <div class="copyright">
@@ -166,7 +168,7 @@
                     <li>
                         <a href="#">
                             <i class="fa fa-facebook"></i>
-                            <p class="icon-text">Facebook</p>
+                            <span class="icon-text">Facebook</span>
                         </a>
                     </li>
                     <li>

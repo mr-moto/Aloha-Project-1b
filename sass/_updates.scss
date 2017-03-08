@@ -8,106 +8,98 @@
     @include desktop {
         height: 333px;
     }
-}
-
-.updates-header {
-    padding-top: 50px;
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 1.3rem;
-    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
-    font-family: 'playfair', sans-serif;
-    font-style: italic;
-    @include tablet {
-        font-size: 2.4rem;
-        padding-top: 4rem;
+    .updates-header {
+        padding-top: 50px;
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1.3rem;
+        text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+        font-family: 'playfair', sans-serif;
+        font-style: italic;
+        @include tablet {
+            font-size: 2.4rem;
+            padding-top: 4rem;
+        }
+        @include desktop {
+            width: 720px;
+            margin: 0 auto;
+        }
     }
-    @include desktop {
-        width: 720px;
-        margin: 0 auto;
+    .updates-bold {
+        font-family: 'playfair', sans-serif;
+        font-style: normal;
+        font-weight: bold
     }
-}
-
-.updates-bold {
-    font-family: 'playfair', sans-serif;
-    font-style: normal;
-    font-weight: bold
-}
-
-.updates-text {
-    font-family: 'raleway', sans-serif;
-    font-weight: 300;
-    color: white;
-    font-size: 1.1rem;
-    line-height: 2;
-    padding: 0 0.2rem;
-    @include tablet {
-        font-size: 1.2rem;
-        line-height: 1.9;
-        padding: 0 0.1rem 2rem;
-        max-width: 720px;
-        margin: 0 auto;
+    .updates-text {
+        font-family: 'raleway', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 1.1rem;
+        line-height: 2;
+        padding: 0 0.2rem;
+        @include tablet {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            padding: 0 0.1rem 2rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        @include desktop {
+            width: 720px;
+            margin: 0 auto;
+        }
     }
-    @include desktop {
-        width: 720px;
-        margin: 0 auto;
+    .email-form {
+        display: block;
+        margin: 2.1rem auto 0;
+        width: 90%;
+        position: relative;
+        @include tablet {
+            padding-bottom: 62px;
+            margin: 0 auto;
+            width: 60%
+        }
+        @include desktop {
+            width: 50%;
+        }
     }
-}
-
-.email-form {
-    display: block;
-    margin: 2.1rem auto 0;
-    width: 90%;
-    position: relative;
-    @include tablet {
-        padding-bottom: 62px;
-        margin: 0 5% 0 5%;
+    input[type="email"] {
+        border: 0;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-family: 'raleway';
+        font-weight: 300;
+        padding: 1rem 33% 1rem 6%;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        @include tablet {
+            width: 75%;
+        }
     }
-    @include desktop {
-        width: 50%;
-        margin: 0 auto;
+    button[type="submit"] {
+        background-color: #e2574c;
+        color: white;
+        font-size: 1rem;
+        font-family: 'raleway';
+        font-weight: 500;
+        border: 0;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 0.7rem 1.7rem;
+        right: 0.3rem;
+        top: 0.3rem;
+        position: absolute;
+        outline: 0;
+        @include tablet {
+            right: 13%;
+        }
     }
-}
-
-input[type="email"] {
-    border: 0;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-family: 'raleway';
-    font-weight: 300;
-    padding: 1rem 33% 1rem 6%;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    @include tablet {
-        width: 75%;
+    input:focus {
+        outline: 0;
+        box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
     }
-}
-
-button[type="submit"] {
-    background-color: #e2574c;
-    color: white;
-    font-size: 1rem;
-    font-family: 'raleway';
-    font-weight: 500;
-    border: 0;
-    border-radius: 25px;
-    cursor: pointer;
-    padding: 0.7rem 1.7rem;
-    right: 0.3rem;
-    top: 0.3rem;
-    position: absolute;
-    outline: 0;
-    @include tablet {
-        right: 13%;
+    button:hover {
+        background-color: #b64036;
     }
-}
-
-input:focus {
-    outline: 0;
-    box-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
-}
-
-button:hover {
-    background-color: #b64036;
 }
