@@ -1,11 +1,7 @@
 # Aloha (RED project 1)
-Programs and tools used:
-    Visual Studio Code
-    Google Chrome
-    Dev tools
 
 ## Personal Learnings:
-Building upon part 1 of the Aloha Project, I have added all the stretch goals and incorporated the javascript/jquery elements taught. 
+Building upon part 1 of the Aloha Project, I have added all the stretch goals and incorporated the javascript/jquery elements taught. Learned about flex box and how we can use it instead of floats.
 
 
 # CHANGELOG:
