@@ -29,7 +29,7 @@ $(function() {
         var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
             val = $('.email-input').val();
         if (email.test(val)) {
-            alert('Success)');
+            alert('Success');
         } else {
             alert('ERROR: invalid email');
         }
